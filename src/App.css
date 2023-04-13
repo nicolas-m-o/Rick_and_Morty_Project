@@ -10,33 +10,15 @@
    }
    nav {
       background-color: rgba(9, 1, 248, 0.384);
-      padding: 20px;
+      padding: 15px;
+   
     }
     
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: space-around;
-    }
+ 
     
-    li {
-      margin: 0 10px;
-    }
+   
     
-    a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1.2rem;
-      text-transform: uppercase;
-      transition: transform 0.3s ease-in-out;
-    }
+   
     
-    a:hover {
-      color: #57ff02;
-      text-shadow: 2px 2px 4px #000;
-      transform: rotateY(360deg);
-    }
+   
     

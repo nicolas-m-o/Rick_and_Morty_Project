@@ -4,10 +4,9 @@
     margin: auto;
     display: flex ;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
     background-size: cover;
     position: relative;
     
-   
-   
 }

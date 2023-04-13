@@ -1,0 +1,18 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  
+}
+
+.boton{
+    background-color: transparent;
+    font-weight: semibold;
+    color: whitesmoke;
+    font-size: 2rem;
+    padding: 1rem 1.5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: all 1s;
+    box-shadow: .5 rem .5rem 1rem whitesmoke ;
+}
