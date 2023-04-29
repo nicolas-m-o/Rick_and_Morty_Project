@@ -17,10 +17,13 @@ export default function Card({id, name, status, species, gender, origin, image, 
          <Link to={`/detail/${id}`}>
              <h1>{name}</h1>
          </Link>
-         <h3>{status}</h3>
-         <h3>{species}</h3>
-         <h3>{gender}</h3>
-         <h3>{origin}</h3>
+         <br />
+         <div className={style.subText}>
+            <h3>{status}</h3>
+            <h3>{species}</h3>
+            <h3>{gender}</h3>
+            <h3>{origin}</h3>
+         </div>
 
          </div>
       </div>

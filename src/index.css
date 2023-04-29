@@ -5,6 +5,7 @@
 }
 
 body {
+
   background-image: url(./image/oscuro.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -15,9 +16,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
-  
+   
+   
 }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

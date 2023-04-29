@@ -2,17 +2,26 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    padding: 20px;
+    background-color: rgba(0, 0, 255, 0.221);
+
   
 }
 
 .boton{
     background-color: transparent;
     font-weight: semibold;
-    color: whitesmoke;
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 1rem 1.5rem;
     border-radius: .5rem;
     cursor: pointer;
     transition: all 1s;
-    box-shadow: .5 rem .5rem 1rem whitesmoke ;
+    box-shadow: .3rem .3rem .3rem rgba(245, 245, 245, 0.497) ;
 }
+
+.boton:hover{
+    transform: translateY(-5px);
+    box-shadow: 7px 7px 15px rgba(34, 255, 0, 0.543);
+}
+
+

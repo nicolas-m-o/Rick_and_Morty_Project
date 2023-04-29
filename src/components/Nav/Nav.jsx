@@ -1,5 +1,5 @@
 import SearchBar from "./SearchBar";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import style from "./Nav.module.css"
 
 const Nav = ({onSearch}) => {
@@ -7,11 +7,11 @@ const Nav = ({onSearch}) => {
 
         <div className={style.container}>
             <button className={style.boton}>
-                <NavLink to='/home'>Home</NavLink>
+                <Link to='/home'>Home</Link>
             </button>
             
             <button className={style.boton}>
-                <NavLink to='/about' >About</NavLink>
+                <Link to='/about' >About</Link>
             </button>
             <SearchBar onSearch={onSearch}/>
 
