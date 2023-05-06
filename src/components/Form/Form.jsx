@@ -34,20 +34,20 @@ const Form = ({ login }) => {
 
         <form className={style.form} onSubmit={handleSubmit}>
 
-            <h1>Login</h1>
+            <h1 className={style.title}>RICK and MORTY</h1>
             <div className={style.inputBox}>
                 <label htmlFor="email">Email: </label>
                 <input type="text" name="email" placeholder="Ingrese su email" value={userData.email}  onChange={handleChange}/>
                 {errors.email && <p>{errors.email}</p>}
             </div>
-            <br />
+            
             <div className={style.inputBox}>
                 <label htmlFor="password">Password: </label>
                 <input type="password" name="password" placeholder="Ingrese su password" value={userData.password} onChange={handleChange} />
                 {errors.password && <p>{errors.password}</p>}
-            <br />
+        
             </div>
-            <button>Submit</button>
+            <button className={style.btn}>Log in</button>
             
         </form>
         

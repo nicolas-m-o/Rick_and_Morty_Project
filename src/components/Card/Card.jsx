@@ -1,6 +1,7 @@
 import style from './Card.module.css'
 import { Link } from 'react-router-dom';
 
+
 export default function Card({id, name, status, species, gender, origin, image, onClose}) {
    return (
       <div className={style.card}>

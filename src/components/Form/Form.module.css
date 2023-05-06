@@ -5,24 +5,44 @@ section {
     align-items: center;
     min-height: 100vh;
     width: 100%; 
+    margin-top: -1600px;
 }
 
 form {
     position: relative;
-    width: 400px;
-    height: 450px;
+    width: 450px;
+    height: 600px;
     background: rgba(0, 0, 0, 0.64);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 2rem;
+    box-shadow: 0 0 10px #eee;
+    transition: 0.5s;
+
+
 }
 
-h1 {
-    font-size: 2em;
-    color: #fff;
+form:hover{
+    box-shadow: 0 0 20px  #eee;
+    background: rgba(0, 0, 0, 0.723);
+    transition: 0.5s;
+
+}
+
+.title {
+
+    position: absolute;
+    top: 1.2em;
+    width: 100%;
     text-align: center;
+    font-family: 'Get Schwifty';
+    font-size: 3.5em;
+    color: #08BAE3;
+    z-index: 50;
+    text-shadow: 0 0 20px #a2ff00; ;
+    -webkit-text-stroke: 1px rgba(0,0,0,0.5);
 }
 
 .inputBox {
@@ -30,11 +50,8 @@ h1 {
     margin: 30px 0;
     width: 310px;
     color: #fff;
+    font-size: 20px;
 }
-
-
-
-
 
 .inputBox input{
     width: 100%;
@@ -45,20 +62,34 @@ h1 {
     font-size: 1em;
     padding: 0 35px 0 5px;
     color: #fff;
+    border-radius: 1.5rem;
 }
 
+         
+.btn {
+    background-image: linear-gradient(to right, #141E30 0%, #058caa  70%, #141E30  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 5px #ffffff;
+    border-radius: 10px;
+    display: block;
+  }
 
+  .btn:hover {
+    background-position: right center; 
+    color: #fff;
+    text-decoration: none;
+  }
+ 
+         
 
-
-/* 
-position: absolute;
-min-width: 280px;
-max-width: 25%;
-width: 25%;
-top: 25%;
-left: 50%;
-transform: translate(-50% , -50%);
-padding: 15px;
-color: white;
-justify-content: center; */
-
+  @font-face {
+    font-family: 'Get Schwifty';
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/3089507/get-schwifty.woff') 
+    format('woff');
+  }

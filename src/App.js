@@ -4,6 +4,7 @@ import Nav from './components/Nav/Nav';
 import About from './components/About/About';
 import Detail from './components/Detail/Detail';
 import Form from './components/Form/Form';
+import VideoRyM from './components/Video';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Routes, Route, useLocation, useNavigate } from 'react-router-dom';
@@ -62,23 +63,23 @@ useEffect(()=> {
             location.pathname !== '/'
             ?<Nav onSearch = {onSearch}/>
             : null
-         }
-       
-         
+         }  
+           {
+            location.pathname === '/'
+            ?<VideoRyM/>
+            : null
+         }  
+      <div>
       <Routes>
-        
          <Route path='/' element={ <Form login={login}/>}></Route>
-
          <Route path='/home' element={<Cards characters={characters}  onClose={onClose} />}></Route>
-
          <Route path='/about' element={<About/>} />
-
          <Route path='/detail/:id' element= {<Detail/>}></Route>
-
       </Routes>
            
          
        
+      </div>
       </div>
    );
 }
